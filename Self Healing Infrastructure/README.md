@@ -32,7 +32,7 @@ Self Healing Infrastructure/
 ## Getting Started
 1. **Clone the repository:**
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/Renuu007/Internship-Projects
    cd "Self Healing Infrastructure"
    ```
 2. **Build and start the services:**
