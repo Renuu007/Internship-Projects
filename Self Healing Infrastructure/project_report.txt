@@ -11,7 +11,7 @@ The following snapshots illustrate the monitoring and alerting workflow of the s
 *Description:* This snapshot displays the health status of alerting rules in Prometheus. Both `NginxDown` and `HighCPU` rules are shown as healthy (OK), indicating that Prometheus is actively evaluating these rules and has not detected any current issues. The last run time and evaluation duration are also visible, confirming that the monitoring system is functioning as expected.
 
 ### 3. Alertmanager Alert Details
-![Alertmanager Alert](alertmanager_alert.png)
+![Alertmanager Alert](https://github.com/Renuu007/Internship-Projects/blob/48d681d0fa1ea50150e62388714de0fe43d20b18/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201800.png)
 *Description:* This snapshot captures the Alertmanager interface, where an active alert (`NginxDown`) has been received and routed to the `ansible-webhook` receiver. The alert details include the alert name, instance, job, and severity. This view demonstrates how Alertmanager processes and displays incoming alerts, and how it can be configured to forward alerts to external systems (such as the webhook application for automated remediation).
 
 Self Healing Infrastructure - Project Report
