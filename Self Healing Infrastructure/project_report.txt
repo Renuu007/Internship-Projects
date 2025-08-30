@@ -7,7 +7,7 @@ The following snapshots illustrate the monitoring and alerting workflow of the s
 *Description:* This snapshot shows the Prometheus Alerts page, where two alert rules are configured: `NginxDown` and `HighCPU`. The `NginxDown` alert is in a pending state, indicating that Prometheus has detected a potential issue with the Nginx service. The `HighCPU` alert is also present, demonstrating the system's ability to monitor multiple conditions. This view provides real-time visibility into the health of monitored services and the status of alert rules.
 
 ### 2. Prometheus Rule Health
-![Prometheus Rule Health](prometheus_rule_health.png)
+![Prometheus Rule Health](https://github.com/Renuu007/Internship-Projects/blob/62aa448296495cfe7f9c4a76eee24496dbe92cbd/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201649.png)
 *Description:* This snapshot displays the health status of alerting rules in Prometheus. Both `NginxDown` and `HighCPU` rules are shown as healthy (OK), indicating that Prometheus is actively evaluating these rules and has not detected any current issues. The last run time and evaluation duration are also visible, confirming that the monitoring system is functioning as expected.
 
 ### 3. Alertmanager Alert Details
