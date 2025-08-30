@@ -1,0 +1,11 @@
+- hosts: localhost
+  become: false
+  tasks:
+    - name: Ensure NGINX container is running
+      community.docker.docker_container:
+        name: nginx
+        image: nginx
+        state: started
+        restart: true
+        networks:
+          - name: selfheal-net

@@ -1,0 +1,53 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    networks:
+      - selfheal-net
+
+  node_exporter:
+    image: prom/node-exporter
+    container_name: node_exporter
+    networks:
+      - selfheal-net
+    ports:
+      - "9100:9100"
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    networks:
+      - selfheal-net
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./alert.rules.yml:/etc/prometheus/alert.rules.yml
+      - ./playbooks:/playbooks
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    networks:
+      - selfheal-net
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+
+  ansible-webhook:
+    build: .
+    container_name: ansible-webhook
+    networks:
+      - selfheal-net
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./playbooks:/playbooks
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  selfheal-net:
+    driver: bridge
