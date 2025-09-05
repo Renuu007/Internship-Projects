@@ -81,11 +81,11 @@ The following snapshots illustrate the monitoring and alerting workflow of the s
 *Description:* This snapshot shows the Prometheus Alerts page, where two alert rules are configured: `NginxDown` and `HighCPU`. The `NginxDown` alert is in a pending state, indicating that Prometheus has detected a potential issue with the Nginx service. The `HighCPU` alert is also present, demonstrating the system's ability to monitor multiple conditions. This view provides real-time visibility into the health of monitored services and the status of alert rules.
 
 ### 2. Prometheus Rule Health
-![Prometheus Rule Health](https://github.com/Renuu007/Internship-Projects/blob/62aa448296495cfe7f9c4a76eee24496dbe92cbd/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201649.png)
+<img width="1917" height="840" alt="Screenshot 2025-08-19 201649" src="https://github.com/user-attachments/assets/70d9f08e-82db-4c0f-b58e-0f9ae7d02f53" />
 *Description:* This snapshot displays the health status of alerting rules in Prometheus. Both `NginxDown` and `HighCPU` rules are shown as healthy (OK), indicating that Prometheus is actively evaluating these rules and has not detected any current issues. The last run time and evaluation duration are also visible, confirming that the monitoring system is functioning as expected.
 
 ### 3. Alertmanager Alert Details
-![Alertmanager Alert](https://github.com/Renuu007/Internship-Projects/blob/48d681d0fa1ea50150e62388714de0fe43d20b18/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201800.png)
+<img width="1916" height="862" alt="Screenshot 2025-08-19 201800" src="https://github.com/user-attachments/assets/258ba84d-66d2-4eec-b710-170561828619" />
 *Description:* This snapshot captures the Alertmanager interface, where an active alert (`NginxDown`) has been received and routed to the `ansible-webhook` receiver. The alert details include the alert name, instance, job, and severity. This view demonstrates how Alertmanager processes and displays incoming alerts, and how it can be configured to forward alerts to external systems (such as the webhook application for automated remediation).
 
 
