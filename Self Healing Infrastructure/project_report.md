@@ -3,7 +3,8 @@ Snapshots and Descriptions
 The following snapshots illustrate the monitoring and alerting workflow of the self-healing infrastructure:
 
 ### 1. Prometheus Alerts View
-![Prometheus Alerts](Self Healing Infrastructure/Screenshot 2025-08-19 201617.png)
+<img width="1919" height="796" alt="Screenshot 2025-08-19 201617" src="https://github.com/user-attachments/assets/85e68c36-4a71-4c51-8f35-b0431285e216" />
+
 *Description:* This snapshot shows the Prometheus Alerts page, where two alert rules are configured: `NginxDown` and `HighCPU`. The `NginxDown` alert is in a pending state, indicating that Prometheus has detected a potential issue with the Nginx service. The `HighCPU` alert is also present, demonstrating the system's ability to monitor multiple conditions. This view provides real-time visibility into the health of monitored services and the status of alert rules.
 
 ### 2. Prometheus Rule Health
