@@ -2,6 +2,14 @@
 
 This project demonstrates a self-healing infrastructure using Prometheus, Alertmanager, and Ansible. It automatically detects failures (such as a downed Nginx service) and triggers automated recovery actions.
 
+## Screenshots 
+<img width="1916" height="862" alt="Screenshot 2025-08-19 201800" src="https://github.com/user-attachments/assets/d1cacefd-ae24-4501-9b47-cad5eda274fd" />
+
+<img width="1917" height="840" alt="Screenshot 2025-08-19 201649" src="https://github.com/user-attachments/assets/5a9e2f8a-eb89-4cdf-9ee5-a7ac88826204" />
+
+<img width="1919" height="796" alt="Screenshot 2025-08-19 201617" src="https://github.com/user-attachments/assets/42fd6695-a5c4-40c0-bb58-e006f5670fd9" />
+
+
 ## Features
 - **Monitoring:** Prometheus monitors the health of services.
 - **Alerting:** Alertmanager sends alerts based on Prometheus rules.
