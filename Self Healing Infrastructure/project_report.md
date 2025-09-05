@@ -1,20 +1,3 @@
-Snapshots and Descriptions
--------------------------
-The following snapshots illustrate the monitoring and alerting workflow of the self-healing infrastructure:
-
-### 1. Prometheus Alerts View
-<img width="1919" height="796" alt="Screenshot 2025-08-19 201617" src="https://github.com/user-attachments/assets/85e68c36-4a71-4c51-8f35-b0431285e216" />
-
-*Description:* This snapshot shows the Prometheus Alerts page, where two alert rules are configured: `NginxDown` and `HighCPU`. The `NginxDown` alert is in a pending state, indicating that Prometheus has detected a potential issue with the Nginx service. The `HighCPU` alert is also present, demonstrating the system's ability to monitor multiple conditions. This view provides real-time visibility into the health of monitored services and the status of alert rules.
-
-### 2. Prometheus Rule Health
-![Prometheus Rule Health](https://github.com/Renuu007/Internship-Projects/blob/62aa448296495cfe7f9c4a76eee24496dbe92cbd/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201649.png)
-*Description:* This snapshot displays the health status of alerting rules in Prometheus. Both `NginxDown` and `HighCPU` rules are shown as healthy (OK), indicating that Prometheus is actively evaluating these rules and has not detected any current issues. The last run time and evaluation duration are also visible, confirming that the monitoring system is functioning as expected.
-
-### 3. Alertmanager Alert Details
-![Alertmanager Alert](https://github.com/Renuu007/Internship-Projects/blob/48d681d0fa1ea50150e62388714de0fe43d20b18/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201800.png)
-*Description:* This snapshot captures the Alertmanager interface, where an active alert (`NginxDown`) has been received and routed to the `ansible-webhook` receiver. The alert details include the alert name, instance, job, and severity. This view demonstrates how Alertmanager processes and displays incoming alerts, and how it can be configured to forward alerts to external systems (such as the webhook application for automated remediation).
-
 Self Healing Infrastructure - Project Report
 ===========================================
 
@@ -93,15 +76,16 @@ Snapshots and Descriptions
 The following snapshots illustrate the monitoring and alerting workflow of the self-healing infrastructure:
 
 ### 1. Prometheus Alerts View
-![Prometheus Alerts]()
+<img width="1919" height="796" alt="Screenshot 2025-08-19 201617" src="https://github.com/user-attachments/assets/85e68c36-4a71-4c51-8f35-b0431285e216" />
+
 *Description:* This snapshot shows the Prometheus Alerts page, where two alert rules are configured: `NginxDown` and `HighCPU`. The `NginxDown` alert is in a pending state, indicating that Prometheus has detected a potential issue with the Nginx service. The `HighCPU` alert is also present, demonstrating the system's ability to monitor multiple conditions. This view provides real-time visibility into the health of monitored services and the status of alert rules.
 
 ### 2. Prometheus Rule Health
-![Prometheus Rule Health]()
+![Prometheus Rule Health](https://github.com/Renuu007/Internship-Projects/blob/62aa448296495cfe7f9c4a76eee24496dbe92cbd/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201649.png)
 *Description:* This snapshot displays the health status of alerting rules in Prometheus. Both `NginxDown` and `HighCPU` rules are shown as healthy (OK), indicating that Prometheus is actively evaluating these rules and has not detected any current issues. The last run time and evaluation duration are also visible, confirming that the monitoring system is functioning as expected.
 
 ### 3. Alertmanager Alert Details
-![Alertmanager Alert](alertmanager_alert.png)
+![Alertmanager Alert](https://github.com/Renuu007/Internship-Projects/blob/48d681d0fa1ea50150e62388714de0fe43d20b18/Self%20Healing%20Infrastructure/Screenshot%202025-08-19%20201800.png)
 *Description:* This snapshot captures the Alertmanager interface, where an active alert (`NginxDown`) has been received and routed to the `ansible-webhook` receiver. The alert details include the alert name, instance, job, and severity. This view demonstrates how Alertmanager processes and displays incoming alerts, and how it can be configured to forward alerts to external systems (such as the webhook application for automated remediation).
 
 
